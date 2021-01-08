@@ -1,4 +1,6 @@
 /config.py
 /app/__pycache__
+/migrations/__pycache__
 /__pycache__
 /.vscode
+/app.db
