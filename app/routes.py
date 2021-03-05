@@ -19,19 +19,7 @@ def index():
         db.session.commit()
         flash('Your post is now live!')
         return redirect(url_for(index))
-    posts = [
-        {
-            'author': {'username': 'John'},
-            'body': 'Beautiful day in Portland!'
-        },
-        {
-            'author': {'username': 'Susan'},
-            'body': 'The Avengers movie was so cool!'
-        }
-    ] # dummy object
-
-    # return render_template('index.html', user=user) - use this to test whether if conditions work in template engine
-    # REMOVED user=user as we're using real data in DB now
+    posts = current_user.followed_posts().all()
     return render_template('index.html', title='Home Page', posts=posts, form=form)
 
 @app.route('/login', methods=['GET', 'POST'])
