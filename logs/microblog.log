@@ -1,0 +1,107 @@
+2021-03-06 13:35:38,466 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 13:38:32,450 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 13:38:42,886 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 13:46:27,653 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 17:55:08,428 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 17:56:29,815 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 17:56:41,668 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 17:56:55,551 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 19:37:55,965 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 19:38:11,241 ERROR: Exception on /reset_password_request [GET] [in /home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/projectsUbuntu/microblog/app/routes.py", line 71, in reset_password_request
+    if current_user.is_authenticated():
+TypeError: 'bool' object is not callable
+2021-03-06 19:40:28,021 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 19:44:07,668 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 19:44:21,135 ERROR: Exception on /reset_password_request [POST] [in /home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/projectsUbuntu/microblog/app/routes.py", line 77, in reset_password_request
+    send_password_reset_email(user)
+  File "/mnt/c/projectsUbuntu/microblog/app/email.py", line 14, in send_password_reset_email
+    sender=app.config['ADMINS'][0],
+NameError: name 'app' is not defined
+2021-03-06 19:45:46,125 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 19:45:52,454 ERROR: Exception on /reset_password_request [POST] [in /home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/projectsUbuntu/microblog/app/routes.py", line 77, in reset_password_request
+    send_password_reset_email(user)
+  File "/mnt/c/projectsUbuntu/microblog/app/email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/mnt/c/projectsUbuntu/microblog/app/email.py", line 9, in send_email
+    msg.html - html_body
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'str'
+2021-03-06 19:49:23,988 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 19:50:07,918 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6NCwiZXhwIjoxNjE1MDUzNTcwLjU3ODM3Mn0.pWkdS9wgTy3Ih8UM5YyHkktmNc3VYHvM6wpHSZke4ao [GET] [in /home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/projectsUbuntu/microblog/app/routes.py", line 95, in reset_password
+    return render_template('reset_password.html', form=form)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/mohamed/miniconda3/envs/mypyenv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/projectsUbuntu/microblog/app/templates/reset_password.html", line 11, in template
+    `           <span style="color: red;">{{{ error }}}</span>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2021-03-06 19:52:10,308 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
+2021-03-06 19:54:15,585 INFO: Microblog startup [in /mnt/c/projectsUbuntu/microblog/app/__init__.py:46]
